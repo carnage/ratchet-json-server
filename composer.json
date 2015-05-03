@@ -1,0 +1,27 @@
+{
+    "name": "carnage/ratchet-json-server",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Riley",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/carnage/ratchet-json-server/issues"
+    },
+    "autoload": {
+        "psr-4": {
+            "Carnage\\JsonServer\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "cboden/ratchet": "~0.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.4.0",
+        "mockery/mockery": "~0.9.3"
+    }
+}
