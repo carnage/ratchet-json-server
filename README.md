@@ -5,7 +5,11 @@ Wrapped by Ratchet's Websocket Server, Wraps your app.
 
 Will automatically serialise and unserialise json into php arrays and back again
 
-Usage:
+# Install:
+
+composer require carnage/ratchet-json-server dev-master
+
+# Usage:
 
 ```
 <?php
@@ -23,4 +27,4 @@ $server = IoServer::factory(new HttpServer($ws));
 $server->run();
 ```
 
-MyChat can now send arrays of data using $conn->send(['name' => 'Fred', 'message' => 'hi']); and have them automatically json serialised.  
+MyChat can now send arrays of data using $conn->send(['name' => 'Fred', 'message' => 'hi']); and have them automatically json serialised. Json strings coming in from your client will be deserialised and presented to the onMessage method of MyChat as an array. 
