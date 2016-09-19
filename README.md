@@ -7,7 +7,7 @@ Will automatically serialise and unserialise json into php arrays and back again
 
 # Install:
 
-composer require carnage/ratchet-json-server dev-master
+composer require carnage/ratchet-json-server ~0.1
 
 # Usage:
 
